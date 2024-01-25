@@ -3,7 +3,7 @@ The goal is to create a mobile application that displays currency values. Those 
 
 Reading ths json is already implemented in `ExchangeRateApi`.
 
-Use `ExchangeRateApi.fixedData()`
+Use `ExchangeRateApi.getExchangeRage()`
 
 ```json
 [
@@ -27,6 +27,13 @@ The app displays the list of currencies and each currency has a `text input fiel
 The input field displays the value for each currency.
 
 When the user edits the input field, we want the app to display the value that the user inputted in each of the currencies that the API returned
+
+### Formula
+The mathematical formula to convert between currencies:
+
+```
+ amount * (to_rate / from_rate) 
+```
 
 ### UI inspiration
 It doesn't have to look exactly like that
